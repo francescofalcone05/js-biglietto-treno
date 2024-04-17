@@ -7,7 +7,14 @@ let priceForKm = 0.21
 let ticketPrice = priceForKm * userkm 
 
 
+if ((userAge > 18) || (userAge < 65)) {
 
+    let ticketPrice = priceForKm * userkm 
+    
+} else if (userAge < 18) {
+
+    let ticketPrice = ticketPrice - ticketPrice*20/100
+}
 
 
 
