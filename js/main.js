@@ -1,21 +1,25 @@
 const userName = prompt ("Scrivi il tuo nome");
 const userSurname = prompt ("Scrivi il tuo cognome");
-let userAge = prompt ("Scrivi la tua eta`");
-let userkm = prompt ("Scrivi i kilometri che dovrai percorrere");
+const userAge = prompt ("Scrivi la tua eta`");
+const userkm = prompt ("Scrivi i kilometri che dovrai percorrere");
 
+//convertire stringa in numero
 //userAge = Number(userAge)
 //userkm = Number(userkm)
 
 
-let priceForKm = 0.21
+const priceForKm = 0.21
 //let ticketPrice = "" 
 let ticketPrice = priceForKm * userkm
 let juniorDiscount = ticketPrice-ticketPrice*20/100
+//let juniorDiscount = ticketPrice * 0.2;
 let seniorDiscount = ticketPrice-ticketPrice*40/100
+//let seniorDiscount = ticketPrice * 0.4;
 
 
 
-if ((userAge > 18) && (userAge < 65)) {
+
+if ((userAge > 17) && (userAge < 66)) {
 
     ticketPrice = priceForKm * userkm 
     console.log("prezzo intero")
@@ -32,30 +36,8 @@ if ((userAge > 18) && (userAge < 65)) {
 }
 
 
-/*let num = 4.6;
-let numeroArrotondato = Math.round(num);
-console.log(numeroArrotondato);*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+//funziona solo in console
+console.log(ticketPrice.toFixed(2))
 
 
 
